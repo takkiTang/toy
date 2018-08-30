@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        *::selection {
+            background-color: #CCFF90;
+        }
+
+        body {
+            height: 100vh;
+            min-height: 399px;
+            width: 100vw;
+            min-width: 800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #00c6ff;
+            background: -webkit-linear-gradient(#0072ff, #00c6ff);
+            background: linear-gradient(#0072ff, #00c6ff);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /*- - - - - - C O N T A C T - C A R D S - - - - - */
+
+        .card {
+            height: auto;
+            max-height: 299px;
+            width: 200px;
+            /* ⬅ Size ~ Small (width: 200px), Medium (width: 225px), Large (width: 250px) */
+            overflow: hidden;
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            -webkit-transition: .1s ease-in-out;
+            transition: .1s ease-in-out;
+            margin-right: 50px;
+        }
+
+        .card:last-of-type {
+            margin-right: 0px;
+        }
+
+        .card:hover {
+            margin-top: -25px;
+            box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .card_Banner {
+            height: 100px;
+            width: inherit;
+            padding-top: 35px;
+            background-color: #FAFAFA;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .c_01 .card_Banner {
+            /* ⬇ Photo by Gem & Lauris RK on Unsplash */
+            background-image: url("https://images.unsplash.com/photo-1505909182942-e2f09aee3e89?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5257b32f41a8a970f1b644c88174cee5&auto=format&fit=crop&w=1352&q=80");
+        }
+
+        .c_02 .card_Banner {
+            /* ⬇ Photo by Samuel C. on Unsplash */
+            background-image: url("https://images.unsplash.com/photo-1535106356142-e3169a8b17d2?ixlib=rb-0.3.5&s=0fce1e3c86e04e07abf7305a6fbfaf01&auto=format&fit=crop&w=668&q=80");
+        }
+
+        .card_Avatar {
+            height: 100px;
+            width: 100px;
+            margin: auto auto;
+            background-size: cover;
+            background-position: center;
+            background-color: #F1F1F1;
+            border: 3px solid #FFFFFF;
+            border-radius: 100%;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .c_01 .card_Avatar {
+            /* ⬇ Image from Twitter (___@cabrown___) */
+            background-image: url("https://pbs.twimg.com/profile_images/1026096613071237120/LrWQlGzm_400x400.jpg");
+        }
+
+        .c_02 .card_Avatar {
+            /* ⬇ Photo by Ayo Ogunseinde on Unsplash */
+            background-image: url("https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=afb35d2683e102d67bcd70b87b100723&auto=format&fit=crop&w=1500&q=80");
+        }
+
+        h3,
+        a,
+        i {
+            font-family: 'Roboto', sans-serif;
+            font-weight: lighter;
+            -webkit-transition: .1s ease-in-out;
+            transition: .1s ease-in-out;
+        }
+
+        h3 {
+            margin-top: 45px;
+            margin-bottom: 5px;
+            font-size: 18px;
+            color: #212121;
+        }
+
+        a {
+            display: block;
+            padding: 5px 0px;
+            font-size: 14px;
+            color: #9E9E9E;
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: #FAFAFA;
+            color: inherit;
+            cursor: pointer;
+            /* ⬅ For Codepen demo ~ Not important! */
+        }
+
+        ul {
+            margin-top: 10px;
+            padding: 15px 0px;
+            background-color: #FAFAFA;
+        }
+
+        ul a {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        ul a:last-of-type {
+            margin-right: 0px;
+        }
+
+        ul a i {
+            color: inherit;
+        }
+
+        ul a i:hover {
+            transform: scale(1.5);
+            color: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Contact Card ~ #01 -->
+    <div class="card c_01">
+        <div class="card_Banner">
+            <div class="card_Avatar"></div>
+        </div>
+        <h3>Callum Brown</h3>
+        <a href="mailto:cabrown96@live.com">📧 cabrown96@live.com</a>
+        <a>📱 +1 123-456-7890</a>
+        <ul>
+            <a href="https://www.linkedin.com/in/-cbrown-" target="_blank"><i class="fa fa-linkedin" style="font-size:16px"></i></a>
+            <a href="https://www.twitter.com/___cbrown___" target="_blank"><i class="fa fa-twitter" style="font-size:16px"></i></a>
+            <a href="https://www.dribbble.com/___cbrown___" target="_blank"><i class="fa fa-dribbble" style="font-size:16px"></i></a>
+            <a href="https://www.codepen.io/___cbrown___" target="_blank"><i class="fa fa-codepen" style="font-size:16px"></i></a>
+            <a href="https://www.instagram.com/___cbrown___" target="_blank"><i class="fa fa-instagram" style="font-size:16px"></i></a>
+        </ul>
+    </div>
+
+    <!-- Contact Card ~ #02 -->
+    <div class="card c_02">
+        <div class="card_Banner">
+            <div class="card_Avatar"></div>
+        </div>
+        <h3>Samuel Ayo</h3>
+        <a>📧 example@email.com</a>
+        <a>🌐 www.website.com</a>
+        <ul>
+            <a><i class="fa fa-linkedin" style="font-size:16px"></i></a>
+            <a><i class="fa fa-facebook" style="font-size:16px"></i></a>
+        </ul>
+    </div>
+
+    <!-- Contact Card ~ #03 (Blank) -->
+    <div class="card">
+        <div class="card_Banner">
+            <div class="card_Avatar"></div>
+        </div>
+        <h3>Name</h3>
+        <a>📧 example@email.com</a>
+        <a>🌐 www.website.com</a>
+        <ul>
+            <a><i class="fa fa-github" style="font-size:16px"></i></a>
+            <a><i class="fa fa-codepen" style="font-size:16px"></i></a>
+            <a><i class="fa fa-slack" style="font-size:16px"></i></a>
+            <a><i class="fa fa-spotify" style="font-size:16px"></i></a>
+        </ul>
+    </div>
+
+</body>
+
+</html>
